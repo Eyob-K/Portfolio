@@ -1,5 +1,5 @@
 
-function ProjectCard({ title, description, technologies }) {
+function ProjectCard({ title, description, technologies , demo }) {
   return (
     <article className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-blue-500">
       <h3 className="text-xl font-bold text-white">
@@ -20,6 +20,16 @@ function ProjectCard({ title, description, technologies }) {
           </span>
         ))}
       </div>
+      {demo && (
+  <a
+    href={demo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-6 inline-block rounded-lg bg-blue-600 px-4 py-2 text-center font-semibold text-white transition hover:bg-blue-500"
+  >
+    Live Demo ↗
+  </a>
+)}
     </article>
   );
 }

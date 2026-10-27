@@ -22,19 +22,20 @@ function App() {
 
   const projects = [
     {
-      id: 1,
-      title: "Injibara Market",
-      description:
-        "An e-commerce application designed to help users browse products and shop online.",
-      technologies: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Node.js",
-        "Express",
-        "MySQL",
-      ],
-    },
+  id: 1,
+  title: "Injibara Market",
+  description:
+    "An e-commerce application designed to help users browse products and shop online.",
+  technologies: [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "Express",
+    "MySQL",
+  ],
+  demo: "https://injibara-market.vercel.app",
+},
     {
       id: 2,
       title: "Hotel Management App",
@@ -43,18 +44,19 @@ function App() {
       technologies: ["Flutter", "Local Storage"],
     },
     {
-      id: 3,
-      title: "Digital Menu App",
-      description:
-        "A digital menu application for cafes and hotels, built with web technologies and a database backend.",
-      technologies: [
-        "React",
-        "Node.js",
-        "Express",
-        "Tailwind CSS",
-        "MySQL",
-      ],
-    },
+  id: 3,
+  title: "Digital Menu App",
+  description:
+    "A digital menu application for cafes and hotels, built with web technologies and a database backend.",
+  technologies: [
+    "React",
+    "Node.js",
+    "Express",
+    "Tailwind CSS",
+    "MySQL",
+  ],
+  demo: "https://digital-menu-sooty-seven.vercel.app/",
+},
   ];
 
   function closeMenu() {
@@ -352,6 +354,7 @@ function App() {
               title={project.title}
               description={project.description}
               technologies={project.technologies}
+              demo={project.demo}
             />
           ))}
         </div>
